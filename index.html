@@ -1,11 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
 
- <h1>Book</h1>
-  <h2>Chapter 1</h2>
-    <h3>Section 1</h3>
-    <h3>Section 2</h3>
-   <h2>Chapter 2</h2>
-     <h3>Section 1</h3>
-         <h4>Digram 1</h4> 
-    <h2>Chapter 3</h2>
-       <h3>Section 1</h3>
-       <h3>Section 2 </h3> 
+    .text{
+        background-color: pink;
+        border: 30px solid black;
+        justify-content: center;
+        display: grid;
+    }
+    .container{
+        padding: 0%;
+        margin: 0%;
+        
+        height: 50vh;
+        display: flex;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: blueviolet;
+        justify-content: center;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 30px solid rgb(10, 192, 224);
+        border-right-color: #f45f8e;
+        border-left-color: khaki;
+    }
+
+    .Father{
+        background-color: rgb(50, 192, 7);
+        display: grid;
+         font: 1em sans-serif; 
+         border: 10px solid rgb(235, 84, 15);  
+    }
+
+    .Mother{
+        background-color: rgb(192, 16, 236);
+        display:grid;
+        font-style: italic 1em,;
+        border: 10px solid rgb(12, 31, 207);
+    }
+    .Brother{
+        background-color: burlywood;
+        color: aqua;
+        border: 10px solid black;
+    }
+    .Sister{
+        background-color: #f45f8e;
+        display: grid;
+        border: 10px solid rgb(167, 214, 226);
+    }
+
+    .p{
+        background-color: yellow;
+        font-size: medium;
+        display: grid;
+        justify-content: center;
+        border: 30px solid black;
+    }
+
+    .nav {
+        --bs-nav-link-padding-x:1rem;
+        --bs-nav-link-padding-y:0.5rem;
+        --bs-nav-link-font-weight: ;
+        --bs-nav-link-color: var(--bs-nav-link-color);
+        --bs-nav-link-hover-color: var(--bs-nav-link-hover-color);
+        --bs-nav-link-disabled-color: var(--bs-secondary-color);
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0%;
+        margin-bottom: 0%;
+        list-style: none;
+    } 
+</style>
+<body>
+
+    <div class="text"> <h1>My Creavity In Using HTML And CSS</h1></div>
+    <div class="container">
+        <div class="Father">Father</div>
+        <div class="Mother">Mother</div>
+        <div class="Brother">Brother</div>
+        <div class="Sister">Sister</div>
+    </div>
+    
+       <div class="p"><h2><p>This is text project for me. I make First time this project.</p></h2>
+       </div>
+
+       <ul class="nav nav-pills">
+        <li>
+            <button class="nav-link active rounded-5">Home</button>
+        </li>
+       </ul>
+
+       <div class="row">
+        <div class="col-lg-6">Brother</div>
+        <div class="col-lg-3">Sister</div>
+        <div class="col-lg-3">Grandfather</div>
+       </div>
+</body>
+</html>
